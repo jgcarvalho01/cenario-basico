@@ -10,5 +10,10 @@ const mesh = new THREE.Mesh(geometry, material)
 
 scene.add(mesh)
 
-const camera = new THREE.PerspectiveCamera(75,)
+const sizes = {
+	width: 800,
+	height: 600
+}
+
+const camera = new THREE.PerspectiveCamera(75,sizes.width/sizes.height)
 scene.add(camera)
