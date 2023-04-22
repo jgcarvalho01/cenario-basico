@@ -15,7 +15,12 @@ const sizes = {
 	height: 600
 }
 
-const camera = new THREE.PerspectiveCamera(75,sizes.width/sizes.height)
+const camera = new THREE.PerspectiveCamera(45,sizes.width/sizes.height)
+
+camera.position.z = 5
+camera.position.y = -1
+camera.position.x = 1
+
 scene.add(camera)
 
 const canvas = document.querySelector('.webgl')
